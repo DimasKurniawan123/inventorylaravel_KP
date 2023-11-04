@@ -26,7 +26,12 @@
 	<div class="wrapper wrapper-login">
 		<div class="container container-login animated fadeIn">
 			<h3 class="text-center">Silahkan Login</h3>
-            <form method="POST" action="">
+			@if ($errors->has('login'))
+				<div class="alert alert-danger">
+					{{ $errors->first('login') }}
+				</div>
+			@endif
+            <form method="POST" action="{{ url('cek_login') }}">
             @csrf
 			<div class="login-form">
 				<div class="form-group form-floating-label">

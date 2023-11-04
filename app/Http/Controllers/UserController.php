@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\user;
-use Illuminate\Support\Facedes\Hash;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
