@@ -30,4 +30,9 @@ class AuthController extends Controller
             ->withErrors(['login' => 'Login gagal']);
         }
     }
+
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/');
+      }
 }

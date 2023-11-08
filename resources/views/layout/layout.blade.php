@@ -78,7 +78,7 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item">
-							<a href="#">
+							<a href="/dashboard">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
 							</a>
@@ -111,12 +111,12 @@
 							</div>
 						</li>
                         <li class="nav-item">
-							<a href="/data_barang">
+							<a href="/home">
 								<i class="fas fa-briefcase"></i>
 								<p>Data Barang</p>
 							</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
 							<a data-toggle="collapse" href="#laporan">
 								<i class="fas fa-file"></i>
 								<p>Data Laporan</p>
@@ -136,23 +136,23 @@
 									</li>
 								</ul>
 							</div>
-						</li>
+						</li> -->
 
                         <li class="nav-item">
-							<a href="#">
+							<a href="{{ url('barang-masuk') }}">
 								<i class="fas fa-desktop"></i>
 								<p>Data Barang Masuk</p>
 							</a>
                         </li>
                         <li class="nav-item">
-							<a href="#">
+							<a href="{{ url('barang-keluar') }}">
 								<i class="fas fa-truck"></i>
 								<p>Data Barang Keluar</p>
 							</a>
                         </li>
 
                         <li class="nav-item">
-							<a href="#">
+							<a href="{{ url('logout') }}">
 								<i class="fas fa-sign-out-alt"></i>
 								<p>Logout</p>
 							</a>
@@ -166,11 +166,14 @@
 	
 	</div>
 	<!--   Core JS Files   -->
-	<script src="/assets/js/core/jquery.3.2.1.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<!-- <script src="/assets/js/core/jquery.3.2.1.min.js"></script> -->
 	<script src="/assets/js/core/popper.min.js"></script>
 	<script src="/assets/js/core/bootstrap.min.js"></script>
 	<!-- jQuery UI -->
-	<script src="/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<!-- <script src="/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script> -->
 	<script src="/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 	<!-- Bootstrap Toggle -->
 	<script src="/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
